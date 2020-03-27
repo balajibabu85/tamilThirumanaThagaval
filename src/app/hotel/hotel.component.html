@@ -1,0 +1,133 @@
+<div class="wrapper">
+<header class="header">
+  <app-social-bar></app-social-bar>
+  <app-menu-bar></app-menu-bar>
+</header>
+<section class="breadcrumbs" style="background-image: url(assets/images/breadcrumbs/reservation.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="h1">Reservation</h1>
+      </div>
+      <!-- <div class="col-md-6">
+            <ol class="breadcrumb">
+              <li><a href="#">Home</a><i class="fa fa-angle-right"></i></li>
+              <li class="active">Reservation</li>
+            </ol>
+          </div> -->
+    </div>
+  </div>
+</section>
+<section class="room-detail">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="row reservation-top">
+          <div class="module __reservation">
+            <div class="module-block">
+              <form class="form-planner form-horizontal">
+                <div class="col-md-3 col-xs-12">
+                  <div class="form-group">
+                    <label>Check in</label>
+                    <input class="form-control __plannerInput" id="datetimepicker1" type="date"
+                      placeholder="10-05-2015" />
+                  </div>
+                </div>
+                <div class="col-md-3 col-xs-12">
+                  <div class="form-group">
+                    <label>Check out</label>
+                    <input class="form-control __plannerInput" id="datetimepicker2" type="date"
+                      placeholder="17-05-2015" />
+                  </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                  <div class="form-group">
+                    <label>Adults</label>
+                    <div class="theme-select">
+                      <select class="form-control __plannerSelect">
+                        <option value="">1</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-xs-6">
+                  <div class="form-group">
+                    <label>Kids</label>
+                    <div class="theme-select">
+                      <select class="form-control __plannerSelect">
+                        <option value="">1</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                  <div class="form-group">
+                    <a href="wizzard-step2.html" class="btn btn-default wizzard-search-btn">Search</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 marg50">
+        <h2 class="h2">{{hotelData.name}}</h2>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="owl-carousel owl_gallery">
+          <div class="item"><img class="img-responsive" src="assets/images/gallery/3.jpg"></div>
+          <div class="item"><img class="img-responsive" src="assets/images/gallery/2.jpg"></div>
+          <div class="item"><img class="img-responsive" src="assets/images/gallery/1.jpg"></div>
+          <div class="item"><img class="img-responsive" src="assets/images/gallery/4.jpg"></div>
+          <div class="item"><img class="img-responsive" src="assets/images/gallery/5.jpg"></div>
+          <div class="item"><img class="img-responsive" src="assets/images/gallery/6.jpg"></div>
+          <div class="item"><img class="img-responsive" src="assets/images/gallery/7.jpg"></div>
+          <div class="item"><img class="img-responsive" src="assets/images/gallery/8.jpg"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="room-detail_overview">
+          <table class="simple">
+            <tr>
+              <td><strong>Price:</strong></td>
+              <td><span>$ {{hotelData.price}}</span> / a night</td>
+            </tr>
+            <tr>
+              <td><strong>Room size:</strong></td>
+              <td>150 sqm</td>
+            </tr>
+            <tr>
+              <td><strong>Bed:</strong></td>
+              <td>2 King Beds</td>
+            </tr>
+            <tr>
+              <td><strong>Max people:</strong></td>
+              <td>5 people</td>
+            </tr>
+            <tr>
+              <td><strong>Wi-Fi:</strong></td>
+              <td>Avaible</td>
+            </tr>
+            <tr>
+              <td><strong>Room Service:</strong></td>
+              <td>Avaible</td>
+            </tr>
+            <tr>
+              <td><strong>Breakfast:</strong></td>
+              <td>Included</td>
+            </tr>
+            <tr>
+              <td><strong>Laundry:</strong></td>
+              <td>Avaible</td>
+            </tr>
+            <tr>
+              <td><strong>Taxi to Airport:</strong></td>
+              <td>Yes</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>

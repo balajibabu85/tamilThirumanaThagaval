@@ -1,0 +1,31 @@
+<section class="best-room">
+  <div class="container">
+    <div class="title-main">
+      <h2 class="h2">Best Offer For Weekend<span class="title-secondary">Look Our Featured Rooms</span></h2>
+    </div>
+    <div class="best-room-carousel">
+      <ul class="row best-room_ul">
+        <li *ngFor="let roomData of room" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 best-room_li">
+          <div class="best-room_img">
+            <a href="#"><img style="width:350px;height:250px" src='assets/images/{{roomData.ImagePath}}' alt="" /></a>
+            <div class="best-room_overlay">
+              <div class="overlay_icn"><a href="best-rooms-detail.html"></a></div>
+            </div>
+          </div>
+          <div class="best-room-info">
+            <div class="best-room_t"><a [routerLink]="['/hotel',roomData.id]">
+              <span><b>Name:</b></span>{{roomData.Name}}</a></div>
+            <div class="best-room_desc"><span><b>Age:</b></span>{{roomData.Age}}
+            </div>
+            <div class="best-room_price">
+              <span><b>Raasi: </b>{{roomData.Zodiac}}</span><br />
+              <span><b>Natchatiram: </b>{{roomData.Star}}</span><br />
+              <span><b>Caste: </b>{{roomData.Caste}}</span><br />
+              <span><b>Gothram: </b>{{roomData.Gothram}}</span>
+            </div>
+          </div>
+        </li>        
+      </ul>
+    </div>
+  </div>
+</section>
