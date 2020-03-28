@@ -16,14 +16,14 @@ import { RegisterFormComponent } from './register-form/register-form.component';
 import {OktaAuthModule, OktaCallbackComponent, OKTA_CONFIG} from '@okta/okta-angular';
 import { LoginComponent } from './login/login.component';
 import { ProtectedComponent } from './protected/protected.component';
-
+import { MaterialModule} from './material/material.module';
 
 const config = {
   issuer: 'https://dev-930356.okta.com/oauth2/default',
   redirectUri: 'http://localhost:4200/implicit/callback',
   clientId: '0oa40u56ufki49dJq4x6',
   pkce: true
-}
+};
 
 @NgModule({
   declarations: [
@@ -44,7 +44,8 @@ const config = {
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    OktaAuthModule
+    OktaAuthModule,
+    MaterialModule
   ],
   providers: [{ provide: OKTA_CONFIG, useValue: config }],
   bootstrap: [AppComponent]
