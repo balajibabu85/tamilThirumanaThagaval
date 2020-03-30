@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { OktaAuthService } from '@okta/okta-angular';
 import * as OktaSignIn from '@okta/okta-signin-widget';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,7 @@ export class AppComponent {
     baseUrl: 'https://dev-930356.okta.com'
   });
 
-  constructor(public oktaAuth: OktaAuthService) {
+  constructor(public oktaAuth: OktaAuthService, private router: Router) {
 
     this.widget.renderEl({
       el: '#okta-signin-container'
@@ -45,6 +46,11 @@ export class AppComponent {
 
   login() {
     this.oktaAuth.loginRedirect('/');
+  }
+
+  profile(){
+    this.router.navigateByUrl("/profile");
+
   }
 
   logout() {

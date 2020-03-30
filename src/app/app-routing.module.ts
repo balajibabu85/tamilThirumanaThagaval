@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HotelComponent } from './hotel/hotel.component';
+import { ProfileComponent } from './profile/profile.component';
 import { OktaAuthModule, OktaCallbackComponent, OktaAuthGuard } from '@okta/okta-angular';
 import { LoginComponent } from './login/login.component';
 import { ProtectedComponent } from './protected/protected.component';
@@ -16,6 +17,7 @@ export function onAuthRequired({ oktaAuth, router }) {
 const routes: Routes = [{path: '', component: HomeComponent},
 // tslint:disable-next-line: whitespace
 {path:'hotel/:id',component:HotelComponent},
+  { path: 'profile', component: ProfileComponent },
   {
     path: 'implicit/callback',
     component: OktaCallbackComponent

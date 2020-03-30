@@ -4,5 +4,6 @@
 <button mat-raised-button color="primary" routerLink="/"> Home </button>
 <button mat-raised-button color="primary" *ngIf="!isAuthenticated" (click)="login()"> Login </button>
 <button mat-raised-button color="primary" *ngIf="isAuthenticated" (click)="logout()"> Logout </button>
+<button  mat-raised-button color="primary" *ngIf="isAuthenticated" (click)="profile()"> Proile </button>
 <!-- <button routerLink="/protected"> Protected </button> -->
 <router-outlet></router-outlet>

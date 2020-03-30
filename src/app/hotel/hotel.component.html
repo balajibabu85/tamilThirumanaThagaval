@@ -3,11 +3,11 @@
   <app-social-bar></app-social-bar>
   <app-menu-bar></app-menu-bar>
 </header>
-<section class="breadcrumbs" style="background-image: url(assets/images/breadcrumbs/reservation.jpg)">
+<!-- <section class="breadcrumbs" style="background-image: url(assets/images/breadcrumbs/reservation.jpg)"> -->
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h1 class="h1">Reservation</h1>
+        <h1 class="h1">Details</h1>
       </div>
       <!-- <div class="col-md-6">
             <ol class="breadcrumb">
@@ -17,11 +17,11 @@
           </div> -->
     </div>
   </div>
-</section>
+<!-- </section> -->
 <section class="room-detail">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
+      <!-- <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="row reservation-top">
           <div class="module __reservation">
             <div class="module-block">
@@ -69,60 +69,128 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="col-lg-12 marg50">
-        <h2 class="h2">{{hotelData.name}}</h2>
+        <h2 class="h2">{{hotelData.Name}}</h2>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6">
-        <div class="owl-carousel owl_gallery">
-          <div class="item"><img class="img-responsive" src="assets/images/gallery/3.jpg"></div>
-          <div class="item"><img class="img-responsive" src="assets/images/gallery/2.jpg"></div>
+        <div class="owl_gallery">
+          <div class="item"><img style="width: 500px;height: 400px;" class="img-responsive" src="assets/images/{{hotelData.ImagePath}}"></div>
+          <!-- <div class="item"><img class="img-responsive" src="assets/images/gallery/2.jpg"></div>
           <div class="item"><img class="img-responsive" src="assets/images/gallery/1.jpg"></div>
           <div class="item"><img class="img-responsive" src="assets/images/gallery/4.jpg"></div>
           <div class="item"><img class="img-responsive" src="assets/images/gallery/5.jpg"></div>
           <div class="item"><img class="img-responsive" src="assets/images/gallery/6.jpg"></div>
           <div class="item"><img class="img-responsive" src="assets/images/gallery/7.jpg"></div>
-          <div class="item"><img class="img-responsive" src="assets/images/gallery/8.jpg"></div>
+          <div class="item"><img class="img-responsive" src="assets/images/gallery/8.jpg"></div> -->
         </div>
       </div>
       <div class="col-lg-6 col-md-6">
         <div class="room-detail_overview">
           <table class="simple">
             <tr>
-              <td><strong>Price:</strong></td>
-              <td><span>$ {{hotelData.price}}</span> / a night</td>
+              <td><strong>DOB:</strong></td>
+              <td><span>{{hotelData.DOB | date:'longDate'}}</span></td>
             </tr>
             <tr>
-              <td><strong>Room size:</strong></td>
-              <td>150 sqm</td>
+              <td><strong>Age:</strong></td>
+              <td><span>{{hotelData.Age}}</span></td>
             </tr>
             <tr>
-              <td><strong>Bed:</strong></td>
-              <td>2 King Beds</td>
+              <td><strong>Gender:</strong></td>
+              <td><span>{{hotelData.Gender}}</span></td>
             </tr>
             <tr>
-              <td><strong>Max people:</strong></td>
-              <td>5 people</td>
+              <td><strong>Height:</strong></td>
+              <td><span>{{hotelData.HeightCms}}</span></td>
             </tr>
             <tr>
-              <td><strong>Wi-Fi:</strong></td>
-              <td>Avaible</td>
+              <td><strong>Weight:</strong></td>
+              <td><span>{{hotelData.WeightKgs}}</span></td>
             </tr>
             <tr>
-              <td><strong>Room Service:</strong></td>
-              <td>Avaible</td>
+              <td><strong>Marital Status:</strong></td>
+              <td><span>{{hotelData.MaritalStatus}}</span></td>
             </tr>
             <tr>
-              <td><strong>Breakfast:</strong></td>
-              <td>Included</td>
+              <td><strong>Mother Tongue:</strong></td>
+              <td><span>{{hotelData.MotherTongue}}</span></td>
             </tr>
             <tr>
-              <td><strong>Laundry:</strong></td>
-              <td>Avaible</td>
+              <td><strong>Languages Known:</strong></td>
+              <td><span>{{hotelData.LanguagesKnown}}</span></td>
             </tr>
             <tr>
-              <td><strong>Taxi to Airport:</strong></td>
-              <td>Yes</td>
+              <td><strong>Complexion:</strong></td>
+              <td><span>{{hotelData.Complexion}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Education :</strong></td>
+              <td><span>{{hotelData.Education}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Education Detail :</strong></td>
+              <td><span>{{hotelData.EducationDetail}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Employed in :</strong></td>
+              <td><span>{{hotelData.EmployedIn}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Occupation :</strong></td>
+              <td><span>{{hotelData.Occupation}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Occupation Detail:</strong></td>
+              <td><span>{{hotelData.OccupationDetail}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Annual Income :</strong></td>
+              <td><span>{{hotelData.AnnualIncome}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Country :</strong></td>
+              <td><span>{{hotelData.Country}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Citizenship :</strong></td>
+              <td><span>{{hotelData.Citizenship}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>State :</strong></td>
+              <td><span>{{hotelData.State}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>City :</strong></td>
+              <td><span>{{hotelData.City}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Religion :</strong></td>
+              <td><span>{{hotelData.Religion}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Caste :</strong></td>
+              <td><span>{{hotelData.Caste}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Zodiac:</strong></td>
+              <td><span>{{hotelData.Zodiac}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Natchatiram:</strong></td>
+              <td><span>{{hotelData.Star}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Gothram:</strong></td>
+              <td><span>{{hotelData.Gothram}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Mobile:</strong></td>
+              <td><span>{{hotelData.Mobile}}</span></td>
+            </tr>
+            <tr>
+              <td><strong>Email :</strong></td>
+              <td><span>{{hotelData.Email}}</span></td>
             </tr>
           </table>
         </div>

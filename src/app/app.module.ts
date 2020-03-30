@@ -17,6 +17,7 @@ import {OktaAuthModule, OktaCallbackComponent, OKTA_CONFIG} from '@okta/okta-ang
 import { LoginComponent } from './login/login.component';
 import { ProtectedComponent } from './protected/protected.component';
 import { MaterialModule} from './material/material.module';
+import { ProfileComponent } from './profile/profile.component';
 
 const config = {
   issuer: 'https://dev-930356.okta.com/oauth2/default',
@@ -36,7 +37,8 @@ const config = {
     HotelComponent,
     RegisterFormComponent,
     LoginComponent,
-    ProtectedComponent
+    ProtectedComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

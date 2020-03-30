@@ -15,7 +15,7 @@ export class HotelComponent implements OnInit {
   error;
   ngOnInit(): void {
     // tslint:disable-next-line:max-line-length
-    this.http.get(`http://5e50ee50f2c0d300147c0100.mockapi.io/api/get/${this.paramId}`).subscribe((data)=>this.hotelData=data,(err)=>this.error=err,()=>{} );
+    this.http.get(`https://telugu-devangar.herokuapp.com/api/persons/${this.paramId}`).subscribe((data)=>{this.hotelData=data; console.log(data);},(err)=>this.error=err,()=>{} );
   }
 
 }
