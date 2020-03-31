@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { OktaAuthService } from '@okta/okta-angular';
 import { FormGroup, FormControl } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 
 class ImageSnippet{
@@ -24,7 +25,7 @@ constructor(public src:string, public file:File) {
 export class ProfileComponent implements OnInit {
   selectedFile;
 
-  constructor(private oktaAuth: OktaAuthService, private http: HttpClient) { }
+  constructor(private oktaAuth: OktaAuthService, private http: HttpClient, private router: Router) { }
    Name;
    Email;
    url;
@@ -37,11 +38,11 @@ export class ProfileComponent implements OnInit {
     this.Email = userClaims.email;
     this.profileForm = new FormGroup({
       Name: new FormControl(this.Name),
-      DOB: new FormControl(new Date()),
-      Age: new FormControl(),
-      Gender: new FormControl(),
-      Height: new FormControl(),
-      Weight: new FormControl(),
+      DOB: new FormControl('1985-10-12'),
+      Age: new FormControl("34"),
+      Gender: new FormControl("Male"),
+      HeightCms: new FormControl("168"),
+      WeightKgs: new FormControl("52"),
       MaritalStatus: new FormControl(),
       MotherTongue: new FormControl(),
       LanguagesKnown: new FormControl(),
@@ -68,9 +69,14 @@ export class ProfileComponent implements OnInit {
   }
   
   profileSubmitForm(){
+    debugger;
+    let headers = new HttpHeaders();
+    headers = headers.set('Content-Type', 'application/json; charset=utf-8');
     console.log(this.profileForm.value);
-    this.http.post("https://telugu-devangar.herokuapp.com/api/persons", JSON.stringify(this.profileForm.value)).subscribe((response) => {
-      console.log('response received is ', response);
+    console.log(JSON.stringify(this.profileForm.value));
+    this.http.post("https://telugu-devangar.herokuapp.com/api/persons", JSON.stringify(this.profileForm.value), { headers: headers}).subscribe((response) => {
+      console.log('Saved Successfully. Response received is ', response);
+      this.router.navigateByUrl("/home");
     });
   }
   processFile(event)
@@ -78,7 +84,7 @@ export class ProfileComponent implements OnInit {
     debugger;
     if(event.target.files && event.target.files[0])
     {
-      this.selectedFile = event.target.files
+      this.selectedFile = event.target.files;
       var reader = new FileReader();
       reader.readAsDataURL(event.target.files[0]);
       reader.onload = (event) => {
@@ -91,6 +97,7 @@ export class ProfileComponent implements OnInit {
         this.http.post('/api/upload', formData)
           .subscribe((response) => {
             console.log('response received is ', response);
+            
           })
       }
     }

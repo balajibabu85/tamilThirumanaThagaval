@@ -4,9 +4,9 @@ const path = require('path');
  
 const app = express();
 const bodyParser = require("body-parser");
-const multipart = require('connect-multiparty');
+const multipart = require('connect-multiparty')
 const multipartMiddleware = multipart({
-  uploadDir: './uploads'
+  uploadDir: ".\Uploads"
 });
 
 app.use(bodyParser.json());

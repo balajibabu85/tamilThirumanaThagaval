@@ -18,6 +18,7 @@ const routes: Routes = [{path: '', component: HomeComponent},
 // tslint:disable-next-line: whitespace
 {path:'hotel/:id',component:HotelComponent},
   { path: 'profile', component: ProfileComponent },
+  { path: 'home', component: HomeComponent },
   {
     path: 'implicit/callback',
     component: OktaCallbackComponent
