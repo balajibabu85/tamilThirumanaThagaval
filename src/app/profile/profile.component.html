@@ -7,7 +7,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <h1 class="h1">Profile Details</h1>
+        <h1 color="black" class="h1">Profile Details</h1>
       </div>
       <!-- <div class="col-md-6">
             <ol class="breadcrumb">
@@ -75,10 +75,9 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6">
           <div class="owl_gallery">
-            <div class="item"><img style="width: 500px;height: 400px;" class="img-responsive"
-                [src]="url">
+            <div class="item"><img style="width: 500px;height: 400px;" class="img-responsive" [src]="url">
               <input #imageInput type="file" accept="image/*" (change)="processFile($event)">
-              </div>
+            </div>
             <!-- <div class="item"><img class="img-responsive" src="assets/images/gallery/2.jpg"></div>
           <div class="item"><img class="img-responsive" src="assets/images/gallery/1.jpg"></div>
           <div class="item"><img class="img-responsive" src="assets/images/gallery/4.jpg"></div>
@@ -89,270 +88,271 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6">
-        <div class="">
-          <form [formGroup]="profileForm" (submit)="profileSubmitForm()">
+          <div class="">
+            <form [formGroup]="profileForm" (submit)="profileSubmitForm()">
 
-            <div class="row">
-              <div class="form-group">
-                <label>DOB: </label>
-                <input type="date" formControlName="DOB" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>DOB: </label>
+                  <input type="date" formControlName="DOB" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Age: </label>
-                <input type="text" readonly formControlName="Age" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Age: </label>
+                  <input type="text" readonly formControlName="Age" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Gender: </label>
-                <select formControlName="Gender" class="form-control">
-                  <option value="-1">--Select Gender--</option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                </select>
+              <div class="row">
+                <div class="form-group">
+                  <label>Gender: </label>
+                  <select formControlName="Gender" class="form-control">
+                    <option value="-1">--Select Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Height (in Cms): </label>
-                <input type="text" formControlName="HeightCms" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Height (in Cms): </label>
+                  <input type="text" formControlName="HeightCms" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Weight (in Kgs): </label>
-                <input type="text" formControlName="WeightKgs" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Weight (in Kgs): </label>
+                  <input type="text" formControlName="WeightKgs" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Marital Status: </label>
-                <select formControlName="MaritalStatus" class="form-control">
-                  <option value="">--Select Marital Status--</option>
-                  <option value="nevermarried">Never Married</option>
-                  <option value="divorced">Divorced</option>
-                  <option value="widowed">Widowed</option>
-                  <option value="other">Other</option>
-                </select>
+              <div class="row">
+                <div class="form-group">
+                  <label>Marital Status: </label>
+                  <select formControlName="MaritalStatus" class="form-control">
+                    <option value="">--Select Marital Status--</option>
+                    <option value="Unmarried">Never Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Mother Tongue: </label>
-                <input type="text" formControlName="MotherTongue" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Mother Tongue: </label>
+                  <input type="text" formControlName="MotherTongue" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Languages Known: </label>
-                <input type="text" formControlName="LanguagesKnown" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Languages Known: </label>
+                  <input type="text" formControlName="LanguagesKnown" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Complexion: </label>
-                <input type="text" formControlName="Complexion" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Complexion: </label>
+                  <input type="text" formControlName="Complexion" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Education: </label>
-                <input type="text" formControlName="Education" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Education: </label>
+                  <input type="text" formControlName="Education" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Education Detail: </label>
-                <input type="text" formControlName="EducationDetail" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Education Detail: </label>
+                  <input type="text" formControlName="EducationDetail" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Employed In: </label>
-                <input type="text" formControlName="EmployedIn" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Employed In: </label>
+                  <input type="text" formControlName="EmployedIn" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Occupation: </label>
-                <input type="text" formControlName="Occupation" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Occupation: </label>
+                  <input type="text" formControlName="Occupation" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Occupation Detail: </label>
-                <input type="text" formControlName="OccupationDetail" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Occupation Detail: </label>
+                  <input type="text" formControlName="OccupationDetail" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Annual Income (in numbers): </label>
-                <input type="text" formControlName="AnnualIncome" class="form-control">
-                <!-- <select formControlName="AnnualIncome" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Annual Income (in numbers): </label>
+                  <input type="text" formControlName="AnnualIncome" class="form-control">
+                  <!-- <select formControlName="AnnualIncome" class="form-control">
       <option value="">--Select Annual Income--</option>
       <option value="lessthan50k">Less than Rs. 50 Thousand</option>
       <option value="50k">Rs. 50 Thousand</option>
       <option value="1L">Rs. 1 Lakh</option>
       <option value="10L">Rs. 10 Lakh</option>
     </select> -->
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Country: </label>
-                <input type="text" formControlName="Country" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Country: </label>
+                  <input type="text" formControlName="Country" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Citizenship: </label>
-                <input type="text" formControlName="Citizenship" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Citizenship: </label>
+                  <input type="text" formControlName="Citizenship" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>State: </label>
-                <input type="text" formControlName="State" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>State: </label>
+                  <input type="text" formControlName="State" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>City: </label>
-                <input type="text" formControlName="City" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>City: </label>
+                  <input type="text" formControlName="City" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Religion: </label>
-                <select formControlName="Religion" class="form-control">
-                  <option value="">--Select Religion--</option>
-                  <option value="Hindu">Hindu</option>
-                  <option value="Muslim">Muslim</option>
-                  <option value="Christian">Christian</option>
-                  <option value="Jain">Jain</option>
-                  <option value="Buddhist">Buddhist</option>
-                  <option value="Other">Other</option>
-                </select>
+              <div class="row">
+                <div class="form-group">
+                  <label>Religion: </label>
+                  <select formControlName="Religion" class="form-control">
+                    <option value="">--Select Religion--</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Muslim">Muslim</option>
+                    <option value="Christian">Christian</option>
+                    <option value="Jain">Jain</option>
+                    <option value="Buddhist">Buddhist</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Caste: </label>
-                <input type="text" formControlName="Caste" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Caste: </label>
+                  <input type="text" formControlName="Caste" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Zodiac: </label>
-                <select formControlName="Zodiac" class="form-control">
-                  <option value="">--Select Zodiac--</option>
-                  <option value="Aries">Aries-Mesha</option>
-                  <option value="Taurus">Taurus-Vrishaba</option>
-                  <option value="Gemini">Gemini-Mithuna</option>
-                  <option value="Cancer">Cancer-Kataka</option>
-                  <option value="Leo">Leo-Simha</option>
-                  <option value="Virgo">Virgo-Kanya</option>
-                  <option value="Libra">Libra-Thula</option>
-                  <option value="Scorpio">Scorpio-Vrischika</option>
-                  <option value="Sagittarius">Sagittarius-Dhanus</option>
-                  <option value="Capricorn">Capricorn-Makara</option>
-                  <option value="Aquarius">Aquarius-Kumbha</option>
-                  <option value="Pisces">Pisces-Meena</option>
-                </select>
+              <div class="row">
+                <div class="form-group">
+                  <label>Zodiac: </label>
+                  <select formControlName="Zodiac" class="form-control">
+                    <option value="">--Select Zodiac--</option>
+                    <option value="Aries">Aries-Mesha</option>
+                    <option value="Taurus">Taurus-Vrishaba</option>
+                    <option value="Gemini">Gemini-Mithuna</option>
+                    <option value="Cancer">Cancer-Kataka</option>
+                    <option value="Leo">Leo-Simha</option>
+                    <option value="Virgo">Virgo-Kanya</option>
+                    <option value="Libra">Libra-Thula</option>
+                    <option value="Scorpio">Scorpio-Vrischika</option>
+                    <option value="Sagittarius">Sagittarius-Dhanus</option>
+                    <option value="Capricorn">Capricorn-Makara</option>
+                    <option value="Aquarius">Aquarius-Kumbha</option>
+                    <option value="Pisces">Pisces-Meena</option>
+                  </select>
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Star (Natchatiram): </label>
-                <select formControlName="Star" class="form-control">
-                  <option value="">--Select Star--</option>
-                  <option value="Ashwini">Ashwini</option>
-                  <option value="Bharani">Bharani</option>
-                  <option value="Karthigai">Karthigai</option>
-                  <option value="Rohini">Rohini</option>
-                  <option value="Mirigasirisham">Mirigasirisham</option>
-                  <option value="Thiruvathirai">Thiruvathirai</option>
-                  <option value="Punarpoosam">Punarpoosam</option>
-                  <option value="Poosam">Poosam</option>
-                  <option value="Ayilyam">Ayilyam</option>
-                  <option value="Makam">Makam</option>
-                  <option value="Pooram">Pooram</option>
-                  <option value="Uthiram">Uthiram</option>
-                  <option value="Hastham">Hastham</option>
-                  <option value="Chithirai">Chithirai</option>
-                  <option value="Swathi">Swathi</option>
-                  <option value="Visakam">Visakam</option>
-                  <option value="Anusham">Anusham</option>
-                  <option value="Kettai">Kettai</option>
-                  <option value="Moolam">Moolam</option>
-                  <option value="Pooradam">Pooradam</option>
-                  <option value="Uthradam">Uthradam</option>
-                  <option value="Thiruvonam">Thiruvonam</option>
-                  <option value="Avittam">Avittam</option>
-                  <option value="Sadhayam">Sadhayam</option>
-                  <option value="Puratathi">Puratathi</option>
-                  <option value="Uthirattathi">Uthirattathi</option>
-                  <option value="Thiruvonam">Thiruvonam</option>
-                  <option value="Aquarius">Avittam</option>
-                  <option value="Revathi">Revathi</option>
-                </select>
+              <div class="row">
+                <div class="form-group">
+                  <label>Star (Natchatiram): </label>
+                  <select formControlName="Star" class="form-control">
+                    <option value="">--Select Star--</option>
+                    <option value="Ashwini">Ashwini</option>
+                    <option value="Bharani">Bharani</option>
+                    <option value="Karthigai">Karthigai</option>
+                    <option value="Rohini">Rohini</option>
+                    <option value="Mirigasirisham">Mirigasirisham</option>
+                    <option value="Thiruvathirai">Thiruvathirai</option>
+                    <option value="Punarpoosam">Punarpoosam</option>
+                    <option value="Poosam">Poosam</option>
+                    <option value="Ayilyam">Ayilyam</option>
+                    <option value="Makam">Makam</option>
+                    <option value="Pooram">Pooram</option>
+                    <option value="Uthiram">Uthiram</option>
+                    <option value="Hastham">Hastham</option>
+                    <option value="Chithirai">Chithirai</option>
+                    <option value="Swathi">Swathi</option>
+                    <option value="Visakam">Visakam</option>
+                    <option value="Anusham">Anusham</option>
+                    <option value="Kettai">Kettai</option>
+                    <option value="Moolam">Moolam</option>
+                    <option value="Pooradam">Pooradam</option>
+                    <option value="Uthradam">Uthradam</option>
+                    <option value="Thiruvonam">Thiruvonam</option>
+                    <option value="Avittam">Avittam</option>
+                    <option value="Sadhayam">Sadhayam</option>
+                    <option value="Puratathi">Puratathi</option>
+                    <option value="Uthirattathi">Uthirattathi</option>
+                    <option value="Thiruvonam">Thiruvonam</option>
+                    <option value="Aquarius">Avittam</option>
+                    <option value="Revathi">Revathi</option>
+                  </select>
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Gothram: </label>
-                <input type="text" formControlName="Gothram" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Gothram: </label>
+                  <input type="text" formControlName="Gothram" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Mobile: </label>
-                <input type="text" formControlName="Mobile" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Mobile: </label>
+                  <input type="text" formControlName="Mobile" class="form-control">
+                </div>
               </div>
-            </div>
 
-            <div class="row">
-              <div class="form-group">
-                <label>Email: </label>
-                <input type="text" readonly value="{{Email}}" formControlName="Email" class="form-control">
+              <div class="row">
+                <div class="form-group">
+                  <label>Email: </label>
+                  <input type="text" readonly value="{{Email}}" formControlName="Email" class="form-control">
+                </div>
               </div>
-            </div>
-            <br>
-            <br>
+              <br>
+              <br>
 
-            <div class="row">
-              <button type="submit" class="btn btn-default">Save</button> 
-              <!-- [disabled]="profileForm.valid" -->
-            </div>
+              <div class="row">
+                <button type="submit" *ngIf="!serviceData" class="btn btn-default">Save</button>
+                <button type="submit" *ngIf="serviceData" class="btn btn-default">Update</button>
+                <!-- [disabled]="profileForm.valid" -->
+              </div>
 
-          </form>
-        </div>
+            </form>
+          </div>
         </div>
         <!-- <div class="col-lg-6 col-md-6">
           <div class="room-detail_overview">
@@ -470,4 +470,3 @@
     </div>
   </section>
 </div>
-

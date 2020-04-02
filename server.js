@@ -1,12 +1,13 @@
 //Install express server
 const express = require('express');
 const path = require('path');
- 
 const app = express();
 const bodyParser = require("body-parser");
-const multipart = require('connect-multiparty')
+const multipart = require('connect-multiparty');
+const fsVar = require('fs');
 const multipartMiddleware = multipart({
-  uploadDir: ".\Uploads"
+  uploadDir: path.join(__dirname + '/src/assets/images'),
+   
 });
 
 app.use(bodyParser.json());
@@ -14,11 +15,17 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-
 app.post('/api/upload', multipartMiddleware, (req, res) => {
-  res.json({
-    'message': 'File uploaded succesfully.'
-  });
+console.log("post starts");
+var tmp_path = req.files.uploads.path;
+var target_path = './src/assets/images/' + req.files.uploads.name;
+fsVar.rename(tmp_path, target_path, function (err) {
+      if (err) throw err;
+      fsVar.unlink(tmp_path, function () {
+        if (err) throw err;
+        res.send('File uploaded to: ' + target_path);
+      });
+      });
 });
  
 // Serve only the static files form the dist directory
