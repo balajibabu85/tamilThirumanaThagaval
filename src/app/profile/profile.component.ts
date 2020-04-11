@@ -21,6 +21,11 @@ export class ProfileComponent implements OnInit {
   serviceUrl;
   profileForm: FormGroup;
   async ngOnInit(): Promise<void> {
+    const userClaims = await this.oktaAuth.getUser();
+    this.Name = userClaims.firstName + ' ' + userClaims.lastName;
+    this.Email = userClaims.email;
+    this.serviceUrl = `https://telugu-devangar.herokuapp.com/api/persons/email/${this.Email}`;
+    console.log(this.serviceUrl);
     const accessToken = await this.oktaAuth.getAccessToken();
     console.log('Access Token is' + accessToken);
     this.profileForm = new FormGroup({
@@ -52,16 +57,12 @@ export class ProfileComponent implements OnInit {
       Email: new FormControl(this.Email),
       ImagePath: new FormControl(this.Email.split(".com")[0] + ".jpeg")
     });
-    const userClaims = await this.oktaAuth.getUser();
-    this.Name = userClaims.firstName + ' ' + userClaims.lastName;
-    this.Email = userClaims.email;
-    this.serviceUrl = `https://telugu-devangar.herokuapp.com/api/persons/email/${this.Email}`;
-    console.log(this.serviceUrl);
+    
     if (accessToken != null) {
       this.http.get(this.serviceUrl).subscribe((data) => {
         if (data != null && data[0] != null) {
           this.serviceData = true;
-          this.url = 'assets/images/' + data[0].ImagePath;
+          this.url = './assets/images/' + data[0].ImagePath;
           this.profileForm = new FormGroup({
             Id: new FormControl(data[0].Id),
             Name: new FormControl(this.Name),

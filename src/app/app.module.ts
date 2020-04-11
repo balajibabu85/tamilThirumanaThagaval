@@ -21,7 +21,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 const config = {
   issuer: 'https://dev-930356.okta.com/oauth2/default',
-  redirectUri: 'http://localhost:4200/implicit/callback',
+  redirectUri: 'https://app-domain.herokuapp.com/implicit/callback',
   clientId: '0oa40u56ufki49dJq4x6',
   pkce: true
 };
