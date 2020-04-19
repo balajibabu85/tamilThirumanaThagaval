@@ -20,7 +20,10 @@ export class ProfileComponent implements OnInit {
   serviceData = false;
   serviceUrl;
   profileForm: FormGroup;
+  mailBody; 
+  formData1;
   async ngOnInit(): Promise<void> {
+    
     const userClaims = await this.oktaAuth.getUser();
     this.Name = userClaims.firstName + ' ' + userClaims.lastName;
     this.Email = userClaims.email;
@@ -28,6 +31,18 @@ export class ProfileComponent implements OnInit {
     console.log(this.serviceUrl);
     const accessToken = await this.oktaAuth.getAccessToken();
     console.log('Access Token is' + accessToken);
+    this.formData1 = new FormData();
+   
+    
+    this.mailBody = this.Name + "requested your phone number. If you are interested, you can mail your contact/phone number to his/her email Id" + this.Email;
+    //this.formData1.append('mailBody', this.mailBody);
+    // this.http.post('/api/sendmail', { bodyMail: this.mailBody})
+    //   .subscribe((response) => {
+    //     debugger;
+    //     console.log("client form Data " + this.formData1)
+    //     console.log('Email sent successfully ', response);
+
+    //   });
     this.profileForm = new FormGroup({
       Name: new FormControl(this.Name),
       DOB: new FormControl(),
@@ -98,6 +113,7 @@ export class ProfileComponent implements OnInit {
       });
     }
   }
+  
 
   profileSubmitForm() {
     let headers = new HttpHeaders();

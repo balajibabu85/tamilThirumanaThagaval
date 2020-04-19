@@ -1,76 +1,13 @@
 <!-- booking component -->
-<div class="relative">
-  <div id="logins" style="right: -7px;top: -44px;">
-    <div id="loginpop" class="fixed-login-popup-new-1024" [style]='showToggleDesc'>
-      <div style="position:relative; text-align:right;">
-        <div><a href="https://www.tamilmatrimony.com/matrimony-mobile-apps?gaact=MOBITVAPPS&amp;gasrc=TOPNAV"
-            target="_blank"><img height="18" width="63" border="0" alt="" class="valign"
-              src="https://imgs.tamilmatrimony.com/bmimgs/trans.gif"></a>&nbsp;&nbsp;<a
-            href="https://www.tamilmatrimony.com/matrimony-mobile-apps?gaact=MOBITVAPPS&amp;gasrc=TOPNAV"
-            target="_blank"><img height="18" width="127" border="0" alt="" class="valign"
-              src="https://imgs.tamilmatrimony.com/bmimgs/trans.gif"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b
-            style="padding:6px 17px 0px 0px; display: inline-block;">Login</b>
-          <form name="Login" method="post" action="https://profile.tamilmatrimony.com/login/memlogin.php" style="">
-            <!--  -->
-            <input type="hidden"
-              value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36|Windows-10|Chrome-80.0.3987.132|adfe36ab176774ff4a397ebe3c1018d7|"
-              name="fpDT" id="fpDT">
-            <div class="relative" style="text-align:left; padding:35px 14px; width: 234px;">
-              <div class="relative"><b>Matrimony ID</b> or <b>Mobile Number</b>or <b>E-mail</b></div>
-              <div class="relative paddt2"><input type="text" onkeydown="this.style.color='#000';"
-                  onblur="if (this.value == '') { this.value = 'ID / E-mail / Mobile Number';this.style.color='#999'; }"
-                  onfocus="if (this.value == 'ID / E-mail / Mobile Number') { this.value = ''; }"
-                  onclick="if (this.value == 'ID / E-mail / Mobile Number') { this.value = ''; }"
-                  value="ID / E-mail / Mobile Number" name="ID" id="ID" class="fixed-txtBox clr3"
-                  style="width: 220px; color: rgb(153, 153, 153);" autocomplete="off" tabindex="1"></div>
-              <div class="paddb8">
-                <!-- -->
-              </div>
-              <div class="relative boldtxt">Password</div>
-              <div class="relative"><input type="password" onkeydown="this.style.color='#000';"
-                  onblur="if (this.value == '') { this.value = 'password';this.style.color='#999';}"
-                  onfocus="$('#ID').removeClass('errorbg').addClass('fixed-txtBox'); if (this.value == 'password') { this.value = ''; }"
-                  onclick="if (this.value == 'password') { this.value = ''; }" name="PASSWORD" id="PASSWORD"
-                  value="password" maxlength="20" class="fixed-txtBox clr3 PASSWORD2" style="width:220px;" tabindex="2"
-                  autocomplete="off"></div>
-              <div class="paddb5">
-                <!-- -->
-              </div>
-              <input type="HIDDEN" value="HP" name="dLT" id="dLT">
-              <div class="paddl0">
-                <div id="dispstylgn" class="paddb5 fleft">
-                  <input type="checkbox" class="radiomargin" value="1" name="STAYLOGIN" id="STAYLOGIN" checked="">
-                  <label class="radiolabel" for="STAYLOGIN" id="STAYLOGINLABEL">Keep me logged in</label>
-                </div>
-                <div class="clear" style="height:0px;">
-                  <!--  -->
-                </div>
-                <!-- <div class="fleft paddr4 paddt4"><a href="javaScript:void(0);"
-                    onclick="window.open ('https://profile.tamilmatrimony.com/login/fbloginprocess.php?oauth_provider=facebook','mywindow','menubar=0,resizable=1,location=0, width=450, height=250')"><img
-                      src="https://imgs.tamilmatrimony.com/bmimgs/bm-fb-login-button.gif" height="22" width="120"
-                      border="0" alt="Login"></a></div> -->
-                <div class="boldtxt fleft paddl15 paddt8">or</div>
-                <div class="fright "><input type="submit" value="Login" class="button small" tabindex="3"
-                    onclick="return topnavlogincheck();"></div><br clear="all">
-              </div>
-              <!-- <div class="paddt10 fright"><a onclick="forgotpasswd('tnfpwd');" href="javascript:void(0);"
-                  id="tnfpwd">Forgot password?</a> |<a href="javascript:void(0);" onclick="otplogin('popotp');"
-                  id="poppwd" style="margin-left:7px;">Login Via OTP</a></div><br clear="all">
-            </div><br clear="all">
-            <div class="clear" style="height:0px;"> -->
-              <!--  -->
-            </div>
-          </form>
-        </div>
 
-      </div>
-    </div>
+<br />
+<br />
+  <div class="">
+    <button mat-raised-button color="accent" (click)="searchButtonClick()">{{searchText}} Search Dialog</button>
+
   </div>
-</div>
-
-  
-  
-  <section class="bg-parallax parallax-window">
+  <br/>
+  <section id="searchDiv" [style]="showToggleDesc" class="bg-parallax parallax-window">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">

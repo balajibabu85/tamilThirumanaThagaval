@@ -15,7 +15,7 @@ export class CardComponentComponent implements OnInit {
 
   showToggleDesc = "display:none";
   showToggle = true;
-
+  searchText = "Show";
 
   searchForm;
   async ngOnInit(): Promise<void> {
@@ -40,23 +40,42 @@ export class CardComponentComponent implements OnInit {
       }
     )
   }
-  show_hide_loginpop() {
-    if (this.showToggle) {
-      this.showToggleDesc = "display:block";
-      this.showToggle = false;
-    } else {
-      this.showToggleDesc = "display:none";
-      this.showToggle = true;
-    }
-    // if(show1 === 'show')
-    // {
-    //   this.showToggle="display:block";
-    // }
-    // else{
+  // show_hide_loginpop() {
+  //   if (this.showToggle) {
+  //     this.showToggleDesc = "display:block";
+  //     this.showToggle = false;
+  //   } else {
+  //     this.showToggleDesc = "display:none";
+  //     this.showToggle = true;
+  //   }
+  //   // if(show1 === 'show')
+  //   // {
+  //   //   this.showToggle="display:block";
+  //   // }
+  //   // else{
 
-    //   this.showToggle = "display:none";
-    // }
+  //   //   this.showToggle = "display:none";
+  //   // }
+  // }
+
+  searchButtonClick()
+  {
+    
+      if (this.showToggle) {
+        this.showToggleDesc = "display:block";
+        this.showToggle = false;
+        this.searchText = "Hide";
+      }
+
+      else {
+        this.showToggleDesc = "display:none";
+        this.showToggle = true;
+        this.searchText = "Show";
+      }
+
   }
+
+
   async submitForm(){
     const accessToken = await this.oktaAuth.getAccessToken();
     if (accessToken != null) {

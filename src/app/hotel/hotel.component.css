@@ -1,0 +1,3 @@
+.simple tr td:nth-child(even) {
+  text-align: left !important;
+}

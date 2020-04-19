@@ -45,7 +45,7 @@
                     <label>Adults</label>
                     <div class="theme-select">
                       <select class="form-control __plannerSelect">
-                        <option value="">1</option>
+                        <mat-option value="">1</mat-option>
                       </select>
                     </div>
                   </div>
@@ -94,7 +94,10 @@
               <div class="row">
                 <div class="form-group">
                   <label>DOB: </label>
-                  <input type="date" formControlName="DOB" class="form-control">
+                  <br/>
+                  <input matInput [matDatepicker]="dp" formControlName="DOB">
+                   <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                   <mat-datepicker #dp></mat-datepicker>
                 </div>
               </div>
 
@@ -108,11 +111,11 @@
               <div class="row">
                 <div class="form-group">
                   <label>Gender: </label>
-                  <select formControlName="Gender" class="form-control">
-                    <option value="-1">--Select Gender--</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                  </select>
+                  <mat-select formControlName="Gender" class="form-control">
+                    <mat-option value="-1">--Select Gender--</mat-option>
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Female">Female</mat-option>
+                  </mat-select>
                 </div>
               </div>
 
@@ -133,13 +136,13 @@
               <div class="row">
                 <div class="form-group">
                   <label>Marital Status: </label>
-                  <select formControlName="MaritalStatus" class="form-control">
-                    <option value="">--Select Marital Status--</option>
-                    <option value="Unmarried">Never Married</option>
-                    <option value="Divorced">Divorced</option>
-                    <option value="Widowed">Widowed</option>
-                    <option value="Other">Other</option>
-                  </select>
+                  <mat-select formControlName="MaritalStatus" class="form-control">
+                    <mat-option value="">--Select Marital Status--</mat-option>
+                    <mat-option value="Unmarried">Never Married</mat-option>
+                    <mat-option value="Divorced">Divorced</mat-option>
+                    <mat-option value="Widowed">Widowed</mat-option>
+                    <mat-option value="Other">Other</mat-option>
+                  </mat-select>
                 </div>
               </div>
 
@@ -244,15 +247,15 @@
               <div class="row">
                 <div class="form-group">
                   <label>Religion: </label>
-                  <select formControlName="Religion" class="form-control">
-                    <option value="">--Select Religion--</option>
-                    <option value="Hindu">Hindu</option>
-                    <option value="Muslim">Muslim</option>
-                    <option value="Christian">Christian</option>
-                    <option value="Jain">Jain</option>
-                    <option value="Buddhist">Buddhist</option>
-                    <option value="Other">Other</option>
-                  </select>
+                  <mat-select formControlName="Religion" class="form-control">
+                    <mat-option value="">--Select Religion--</mat-option>
+                    <mat-option value="Hindu">Hindu</mat-option>
+                    <mat-option value="Muslim">Muslim</mat-option>
+                    <mat-option value="Christian">Christian</mat-option>
+                    <mat-option value="Jain">Jain</mat-option>
+                    <mat-option value="Buddhist">Buddhist</mat-option>
+                    <mat-option value="Other">Other</mat-option>
+                  </mat-select>
                 </div>
               </div>
 
@@ -266,59 +269,59 @@
               <div class="row">
                 <div class="form-group">
                   <label>Zodiac: </label>
-                  <select formControlName="Zodiac" class="form-control">
-                    <option value="">--Select Zodiac--</option>
-                    <option value="Aries">Aries-Mesha</option>
-                    <option value="Taurus">Taurus-Vrishaba</option>
-                    <option value="Gemini">Gemini-Mithuna</option>
-                    <option value="Cancer">Cancer-Kataka</option>
-                    <option value="Leo">Leo-Simha</option>
-                    <option value="Virgo">Virgo-Kanya</option>
-                    <option value="Libra">Libra-Thula</option>
-                    <option value="Scorpio">Scorpio-Vrischika</option>
-                    <option value="Sagittarius">Sagittarius-Dhanus</option>
-                    <option value="Capricorn">Capricorn-Makara</option>
-                    <option value="Aquarius">Aquarius-Kumbha</option>
-                    <option value="Pisces">Pisces-Meena</option>
-                  </select>
+                  <mat-select formControlName="Zodiac" class="form-control">
+                    <mat-option value="">--Select Zodiac--</mat-option>
+                    <mat-option value="Aries">Aries-Mesha</mat-option>
+                    <mat-option value="Taurus">Taurus-Vrishaba</mat-option>
+                    <mat-option value="Gemini">Gemini-Mithuna</mat-option>
+                    <mat-option value="Cancer">Cancer-Kataka</mat-option>
+                    <mat-option value="Leo">Leo-Simha</mat-option>
+                    <mat-option value="Virgo">Virgo-Kanya</mat-option>
+                    <mat-option value="Libra">Libra-Thula</mat-option>
+                    <mat-option value="Scorpio">Scorpio-Vrischika</mat-option>
+                    <mat-option value="Sagittarius">Sagittarius-Dhanus</mat-option>
+                    <mat-option value="Capricorn">Capricorn-Makara</mat-option>
+                    <mat-option value="Aquarius">Aquarius-Kumbha</mat-option>
+                    <mat-option value="Pisces">Pisces-Meena</mat-option>
+                  </mat-select>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
                   <label>Star (Natchatiram): </label>
-                  <select formControlName="Star" class="form-control">
-                    <option value="">--Select Star--</option>
-                    <option value="Ashwini">Ashwini</option>
-                    <option value="Bharani">Bharani</option>
-                    <option value="Karthigai">Karthigai</option>
-                    <option value="Rohini">Rohini</option>
-                    <option value="Mirigasirisham">Mirigasirisham</option>
-                    <option value="Thiruvathirai">Thiruvathirai</option>
-                    <option value="Punarpoosam">Punarpoosam</option>
-                    <option value="Poosam">Poosam</option>
-                    <option value="Ayilyam">Ayilyam</option>
-                    <option value="Makam">Makam</option>
-                    <option value="Pooram">Pooram</option>
-                    <option value="Uthiram">Uthiram</option>
-                    <option value="Hastham">Hastham</option>
-                    <option value="Chithirai">Chithirai</option>
-                    <option value="Swathi">Swathi</option>
-                    <option value="Visakam">Visakam</option>
-                    <option value="Anusham">Anusham</option>
-                    <option value="Kettai">Kettai</option>
-                    <option value="Moolam">Moolam</option>
-                    <option value="Pooradam">Pooradam</option>
-                    <option value="Uthradam">Uthradam</option>
-                    <option value="Thiruvonam">Thiruvonam</option>
-                    <option value="Avittam">Avittam</option>
-                    <option value="Sadhayam">Sadhayam</option>
-                    <option value="Puratathi">Puratathi</option>
-                    <option value="Uthirattathi">Uthirattathi</option>
-                    <option value="Thiruvonam">Thiruvonam</option>
-                    <option value="Aquarius">Avittam</option>
-                    <option value="Revathi">Revathi</option>
-                  </select>
+                  <mat-select formControlName="Star" class="form-control">
+                    <mat-option value="">--Select Star--</mat-option>
+                    <mat-option value="Ashwini">Ashwini</mat-option>
+                    <mat-option value="Bharani">Bharani</mat-option>
+                    <mat-option value="Karthigai">Karthigai</mat-option>
+                    <mat-option value="Rohini">Rohini</mat-option>
+                    <mat-option value="Mirigasirisham">Mirigasirisham</mat-option>
+                    <mat-option value="Thiruvathirai">Thiruvathirai</mat-option>
+                    <mat-option value="Punarpoosam">Punarpoosam</mat-option>
+                    <mat-option value="Poosam">Poosam</mat-option>
+                    <mat-option value="Ayilyam">Ayilyam</mat-option>
+                    <mat-option value="Makam">Makam</mat-option>
+                    <mat-option value="Pooram">Pooram</mat-option>
+                    <mat-option value="Uthiram">Uthiram</mat-option>
+                    <mat-option value="Hastham">Hastham</mat-option>
+                    <mat-option value="Chithirai">Chithirai</mat-option>
+                    <mat-option value="Swathi">Swathi</mat-option>
+                    <mat-option value="Visakam">Visakam</mat-option>
+                    <mat-option value="Anusham">Anusham</mat-option>
+                    <mat-option value="Kettai">Kettai</mat-option>
+                    <mat-option value="Moolam">Moolam</mat-option>
+                    <mat-option value="Pooradam">Pooradam</mat-option>
+                    <mat-option value="Uthradam">Uthradam</mat-option>
+                    <mat-option value="Thiruvonam">Thiruvonam</mat-option>
+                    <mat-option value="Avittam">Avittam</mat-option>
+                    <mat-option value="Sadhayam">Sadhayam</mat-option>
+                    <mat-option value="Puratathi">Puratathi</mat-option>
+                    <mat-option value="Uthirattathi">Uthirattathi</mat-option>
+                    <mat-option value="Thiruvonam">Thiruvonam</mat-option>
+                    <mat-option value="Aquarius">Avittam</mat-option>
+                    <mat-option value="Revathi">Revathi</mat-option>
+                  </mat-select>
                 </div>
               </div>
 

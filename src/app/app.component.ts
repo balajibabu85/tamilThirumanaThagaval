@@ -3,12 +3,14 @@ import { OktaAuthService } from '@okta/okta-angular';
 import * as OktaSignIn from '@okta/okta-signin-widget';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selected = 'option2';
   title = 'AppDomain';
   isAuthenticated: boolean;
 
@@ -56,4 +58,6 @@ export class AppComponent {
   logout() {
     this.oktaAuth.logout('/');
   }
+
+ 
 }

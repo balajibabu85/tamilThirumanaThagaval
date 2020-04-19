@@ -1,9 +1,23 @@
 
 <link href="https://global.oktacdn.com/okta-signin-widget/3.1.3/css/okta-sign-in.min.css" type="text/css"
   rel="stylesheet" />
-<button mat-raised-button color="primary" routerLink="/"> Home </button>
-<button mat-raised-button color="primary" *ngIf="!isAuthenticated" (click)="login()"> Login </button>
-<button mat-raised-button color="primary" *ngIf="isAuthenticated" (click)="logout()"> Logout </button>
-<button  mat-raised-button color="primary" *ngIf="isAuthenticated" (click)="profile()"> Proile </button>
+
+<button mat-raised-button color="accent" [matMenuTriggerFor]="contactMenu" class="pull-right">
+  Contact Us </button>
+  <mat-menu #contactMenu="matMenu">
+    <button mat-menu-item>Oldwashermanpet, Chennai</button>
+    <button mat-menu-item>b2balaji@gmail.com</button>
+    <button mat-menu-item>+91 9940553779</button>
+    <!-- <div class="header-location"><i class="fa fa-home"></i> <a href="#">Oldwashermanpet, Chennai</a></div>
+    <div class="header-email"><i class="fa fa-envelope-o"></i> <a href="mailto:support@email.com">b2balaji@gmail.com</a>
+    </div>
+    <div class="header-phone"><i class="fa fa-phone"></i> <a href="#">+91 9940553779</a></div> -->
+  </mat-menu>
+<button mat-raised-button color="accent" class="pull-right" *ngIf="isAuthenticated" (click)="profile()"> Proile
+</button>
+<button mat-raised-button color="accent" class="pull-right" *ngIf="isAuthenticated" (click)="logout()"> Logout </button>
+<button mat-raised-button color="accent" class="pull-right" *ngIf="!isAuthenticated" (click)="login()"> Login </button>
+<button mat-raised-button color="accent" class="pull-right" routerLink="/"> Home </button>
+
 <!-- <button routerLink="/protected"> Protected </button> -->
 <router-outlet></router-outlet>
