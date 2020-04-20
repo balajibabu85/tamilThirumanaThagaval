@@ -13,11 +13,14 @@
     </div>
     <div class="header-phone"><i class="fa fa-phone"></i> <a href="#">+91 9940553779</a></div> -->
   </mat-menu>
-<button mat-raised-button color="accent" class="pull-right" *ngIf="isAuthenticated" (click)="profile()"> Proile
+<button mat-raised-button color="accent" class="pull-right" *ngIf="isAuthenticated" (click)="profile()"> Profile
 </button>
 <button mat-raised-button color="accent" class="pull-right" *ngIf="isAuthenticated" (click)="logout()"> Logout </button>
 <button mat-raised-button color="accent" class="pull-right" *ngIf="!isAuthenticated" (click)="login()"> Login </button>
 <button mat-raised-button color="accent" class="pull-right" routerLink="/"> Home </button>
-
+ <!-- <mat-form-field>
+   <mat-label>Favorite food</mat-label>
+   <input type="text" matInput placeholder="Ex. Pizza" value="Sushi">
+ </mat-form-field> -->
 <!-- <button routerLink="/protected"> Protected </button> -->
 <router-outlet></router-outlet>

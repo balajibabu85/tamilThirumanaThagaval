@@ -21,6 +21,8 @@ import { MaterialModule} from './material/material.module';
 import { ProfileComponent } from './profile/profile.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 const config = {
   issuer: 'https://dev-930356.okta.com/oauth2/default',
@@ -53,6 +55,8 @@ const config = {
     MaterialModule,
     MatMenuModule,
     MatDatepickerModule,
+    MatFormFieldModule,
+    MatInputModule,
     CommonModule,
     BrowserAnimationsModule
   ],

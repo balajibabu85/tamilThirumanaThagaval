@@ -93,119 +93,148 @@
 
               <div class="row">
                 <div class="form-group">
-                  <label>DOB: </label>
+                   <mat-form-field>
+                  <mat-label>DOB: </mat-label>
                   <br/>
                   <input matInput [matDatepicker]="dp" formControlName="DOB">
                    <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
                    <mat-datepicker #dp></mat-datepicker>
+                   </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Age: </label>
-                  <input type="text" readonly formControlName="Age" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Age: </mat-label>
+                  <input matInput readonly formControlName="Age">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Gender: </label>
-                  <mat-select formControlName="Gender" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Gender: </mat-label>
+                  <mat-select formControlName="Gender">
                     <mat-option value="-1">--Select Gender--</mat-option>
                     <mat-option value="Male">Male</mat-option>
                     <mat-option value="Female">Female</mat-option>
                   </mat-select>
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Height (in Cms): </label>
-                  <input type="text" formControlName="HeightCms" class="form-control">
+                  <mat-form-field>
+                  <mat-label>Height (in Cms): </mat-label>
+                  <input matInput formControlName="HeightCms">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Weight (in Kgs): </label>
-                  <input type="text" formControlName="WeightKgs" class="form-control">
+                  <mat-form-field>
+                  <mat-label>Weight (in Kgs): </mat-label>
+                  <input matInput formControlName="WeightKgs">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Marital Status: </label>
-                  <mat-select formControlName="MaritalStatus" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Marital Status: </mat-label>
+                  <mat-select formControlName="MaritalStatus">
                     <mat-option value="">--Select Marital Status--</mat-option>
                     <mat-option value="Unmarried">Never Married</mat-option>
                     <mat-option value="Divorced">Divorced</mat-option>
                     <mat-option value="Widowed">Widowed</mat-option>
                     <mat-option value="Other">Other</mat-option>
                   </mat-select>
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Mother Tongue: </label>
-                  <input type="text" formControlName="MotherTongue" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Mother Tongue: </mat-label>
+                  <input matInput type="text" formControlName="MotherTongue">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Languages Known: </label>
-                  <input type="text" formControlName="LanguagesKnown" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Languages Known: </mat-label>
+                  <input matInput type="text" formControlName="LanguagesKnown">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Complexion: </label>
-                  <input type="text" formControlName="Complexion" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Complexion: </mat-label>
+                  <input matInput type="text" formControlName="Complexion">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Education: </label>
-                  <input type="text" formControlName="Education" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Education: </mat-label>
+                  <input matInput type="text" formControlName="Education">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Education Detail: </label>
-                  <input type="text" formControlName="EducationDetail" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Education Detail: </mat-label>
+                  <input matInput type="text" formControlName="EducationDetail">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Employed In: </label>
-                  <input type="text" formControlName="EmployedIn" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Employed In: </mat-label>
+                  <input matInput type="text" formControlName="EmployedIn">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Occupation: </label>
-                  <input type="text" formControlName="Occupation" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Occupation: </mat-label>
+                  <input matInput type="text" formControlName="Occupation">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Occupation Detail: </label>
-                  <input type="text" formControlName="OccupationDetail" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Occupation Detail: </mat-label>
+                  <input matInput type="text" formControlName="OccupationDetail">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Annual Income (in numbers): </label>
-                  <input type="text" formControlName="AnnualIncome" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Annual Income (in numbers): </mat-label>
+                  <input matInput type="text" formControlName="AnnualIncome">
                   <!-- <select formControlName="AnnualIncome" class="form-control">
       <option value="">--Select Annual Income--</option>
       <option value="lessthan50k">Less than Rs. 50 Thousand</option>
@@ -213,41 +242,51 @@
       <option value="1L">Rs. 1 Lakh</option>
       <option value="10L">Rs. 10 Lakh</option>
     </select> -->
+    </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Country: </label>
-                  <input type="text" formControlName="Country" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Country: </mat-label>
+                  <input matInput type="text" formControlName="Country">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Citizenship: </label>
-                  <input type="text" formControlName="Citizenship" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Citizenship: </mat-label>
+                  <input matInput type="text" formControlName="Citizenship">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>State: </label>
-                  <input type="text" formControlName="State" class="form-control">
+                   <mat-form-field>
+                  <mat-label>State: </mat-label>
+                  <input matInput type="text" formControlName="State">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>City: </label>
-                  <input type="text" formControlName="City" class="form-control">
+                   <mat-form-field>
+                  <mat-label>City: </mat-label>
+                  <input matInput type="text" formControlName="City">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Religion: </label>
-                  <mat-select formControlName="Religion" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Religion: </mat-label>
+                  <mat-select formControlName="Religion">
                     <mat-option value="">--Select Religion--</mat-option>
                     <mat-option value="Hindu">Hindu</mat-option>
                     <mat-option value="Muslim">Muslim</mat-option>
@@ -256,20 +295,24 @@
                     <mat-option value="Buddhist">Buddhist</mat-option>
                     <mat-option value="Other">Other</mat-option>
                   </mat-select>
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Caste: </label>
-                  <input type="text" formControlName="Caste" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Caste: </mat-label>
+                  <input matInput type="text" formControlName="Caste">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Zodiac: </label>
-                  <mat-select formControlName="Zodiac" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Zodiac: </mat-label>
+                  <mat-select formControlName="Zodiac">
                     <mat-option value="">--Select Zodiac--</mat-option>
                     <mat-option value="Aries">Aries-Mesha</mat-option>
                     <mat-option value="Taurus">Taurus-Vrishaba</mat-option>
@@ -284,13 +327,15 @@
                     <mat-option value="Aquarius">Aquarius-Kumbha</mat-option>
                     <mat-option value="Pisces">Pisces-Meena</mat-option>
                   </mat-select>
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Star (Natchatiram): </label>
-                  <mat-select formControlName="Star" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Star (Natchatiram): </mat-label>
+                  <mat-select formControlName="Star">
                     <mat-option value="">--Select Star--</mat-option>
                     <mat-option value="Ashwini">Ashwini</mat-option>
                     <mat-option value="Bharani">Bharani</mat-option>
@@ -322,35 +367,42 @@
                     <mat-option value="Aquarius">Avittam</mat-option>
                     <mat-option value="Revathi">Revathi</mat-option>
                   </mat-select>
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Gothram: </label>
-                  <input type="text" formControlName="Gothram" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Gothram: </mat-label>
+                  <input matInput formControlName="Gothram">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Mobile: </label>
-                  <input type="text" formControlName="Mobile" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Mobile: </mat-label>
+                  <input matInput formControlName="Mobile">
+                  </mat-form-field>
                 </div>
               </div>
 
               <div class="row">
                 <div class="form-group">
-                  <label>Email: </label>
-                  <input type="text" readonly formControlName="Email" class="form-control">
+                   <mat-form-field>
+                  <mat-label>Email: </mat-label>
+                  <input matInput readonly formControlName="Email">
+                  </mat-form-field>
                 </div>
               </div>
               <br>
               <br>
 
               <div class="row">
-                <button type="submit" *ngIf="!serviceData" class="btn btn-default">Save</button>
-                <button type="submit" *ngIf="serviceData" class="btn btn-default">Update</button>
+                <button mat-raised-button color="accent" type="submit" *ngIf="!serviceData">Save</button>
+                <button mat-raised-button color="accent" type="submit" *ngIf="serviceData">Update</button>
                 <!-- [disabled]="profileForm.valid" -->
               </div>
 
