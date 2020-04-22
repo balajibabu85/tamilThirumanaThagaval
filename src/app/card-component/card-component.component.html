@@ -39,11 +39,13 @@
                 <div class="form-group">
                   <label>Gender: </label>
                   <div class="theme-select">
-                    <select formControlName="searchGender" class="form-control __plannerSelect">
-                      <option value="">--Select Gender--</option>
-                      <option value="Female">Girls</option>
-                      <option value="Male">Boys</option>
-                    </select>
+                    <mat-form-field>
+                    <mat-select formControlName="searchGender" class="form-control __plannerSelect">
+                      <mat-option value="">--Select Gender--</mat-option>
+                      <mat-option value="Female">Girls</mat-option>
+                      <mat-option value="Male">Boys</mat-option>
+                    </mat-select>
+                    </mat-form-field>
                   </div>
                 </div>
               </div>
@@ -53,12 +55,14 @@
                 <div class="form-group">
                   <label>Language: </label>
                   <div class="theme-select">
-                    <select formControlName="searchLanguage" class="form-control __plannerSelect">
-                      <option value="">--Select Language--</option>
-                      <option value="Telugu">Telugu</option>
-                      <option value="Tamil">Tamil</option>
-                      <option value="Others">Others</option>
-                    </select>
+                    <mat-form-field>
+                    <mat-select formControlName="searchLanguage" class="form-control __plannerSelect">
+                      <mat-option value="">--Select Language--</mat-option>
+                      <mat-option value="Telugu">Telugu</mat-option>
+                      <mat-option value="Tamil">Tamil</mat-option>
+                      <mat-option value="Others">Others</mat-option>
+                    </mat-select>
+                    </mat-form-field>
                   </div>
                 </div>
               </div>
@@ -68,13 +72,15 @@
                 <!-- <div class="focol-lg-12 col-md-12 col-sm-12 col-xs-12rm-group"> -->
                   <label>Caste: </label>
                   <div class="theme-select">
-                    <select formControlName="searchCaste" class="form-control __plannerSelect">
-                      <option value="Telugu Devangar">Telugu Devanga Chettiar</option>
-                      <option value="">Vanniya Chettiar</option>
-                      <option value="">24 Manai Chettiar</option>
-                      <option value="">Vellan Chettiar</option>
-                      <option value="">Kongu Chettiar</option>
-                    </select>
+                    <mat-form-field>
+                    <mat-select formControlName="searchCaste" class="form-control __plannerSelect">
+                      <mat-option value="Telugu Devangar">Telugu Devanga Chettiar</mat-option>
+                      <mat-option value="">Vanniya Chettiar</mat-option>
+                      <mat-option value="">24 Manai Chettiar</mat-option>
+                      <mat-option value="">Vellan Chettiar</mat-option>
+                      <mat-option value="">Kongu Chettiar</mat-option>
+                    </mat-select>
+                    </mat-form-field>
                   </div>
                 </div>
               </div>
@@ -86,133 +92,137 @@
                   <!-- <div class="theme-select"> -->
                     <!-- <span><b style="color:white">From</b>
                     <select formControlName="adults" class="">
-                      <option value="">25</option>
-                      <option value="">26</option>
-                      <option value="">27</option>
-                      <option value="">28</option>
-                      <option value="">29</option>
+                      <mat-option value="">25</mat-option>
+                      <mat-option value="">26</mat-option>
+                      <mat-option value="">27</mat-option>
+                      <mat-option value="">28</mat-option>
+                      <mat-option value="">29</mat-option>
                     </select>
                     <b style="color:white">To</b>
                     <select formControlName="adults" class="">
-                      <option value="">25</option>
-                      <option value="">26</option>
-                      <option value="">27</option>
-                      <option value="">28</option>
-                      <option value="">29</option>
+                      <mat-option value="">25</mat-option>
+                      <mat-option value="">26</mat-option>
+                      <mat-option value="">27</mat-option>
+                      <mat-option value="">28</mat-option>
+                      <mat-option value="">29</mat-option>
                     </select>
                     </span> -->
                     <div>
-                      <select formControlName="searchFromAge" name="STAGE" id="STAGE" style="width:60px;" class="optiondiv" size="1">
+                      <mat-form-field>
+                      <mat-select formControlName="searchFromAge" name="STAGE" id="STAGE" class="optiondiv" size="1">
                         <!-- onblur="validateAge(this.form,'ageerr');" -->
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                      </select>
+                        <mat-option value="21">21</mat-option>
+                        <mat-option value="22">22</mat-option>
+                        <mat-option value="23">23</mat-option>
+                        <mat-option value="24">24</mat-option>
+                        <mat-option value="25">25</mat-option>
+                        <mat-option value="26">26</mat-option>
+                        <mat-option value="27">27</mat-option>
+                        <mat-option value="28">28</mat-option>
+                        <mat-option value="29">29</mat-option>
+                        <mat-option value="30">30</mat-option>
+                        <mat-option value="31">31</mat-option>
+                        <mat-option value="32">32</mat-option>
+                        <mat-option value="33">33</mat-option>
+                        <mat-option value="34">34</mat-option>
+                        <mat-option value="35">35</mat-option>
+                        <mat-option value="36">36</mat-option>
+                        <mat-option value="37">37</mat-option>
+                        <mat-option value="38">38</mat-option>
+                        <mat-option value="39">39</mat-option>
+                        <mat-option value="40">40</mat-option>
+                        <mat-option value="41">41</mat-option>
+                        <mat-option value="42">42</mat-option>
+                        <mat-option value="43">43</mat-option>
+                        <mat-option value="44">44</mat-option>
+                        <mat-option value="45">45</mat-option>
+                        <mat-option value="46">46</mat-option>
+                        <mat-option value="47">47</mat-option>
+                        <mat-option value="48">48</mat-option>
+                        <mat-option value="49">49</mat-option>
+                        <mat-option value="50">50</mat-option>
+                        <mat-option value="51">51</mat-option>
+                        <mat-option value="52">52</mat-option>
+                        <mat-option value="53">53</mat-option>
+                        <mat-option value="54">54</mat-option>
+                        <mat-option value="55">55</mat-option>
+                        <mat-option value="56">56</mat-option>
+                        <mat-option value="57">57</mat-option>
+                        <mat-option value="58">58</mat-option>
+                        <mat-option value="59">59</mat-option>
+                        <mat-option value="60">60</mat-option>
+                        <mat-option value="61">61</mat-option>
+                        <mat-option value="62">62</mat-option>
+                        <mat-option value="63">63</mat-option>
+                        <mat-option value="64">64</mat-option>
+                        <mat-option value="65">65</mat-option>
+                        <mat-option value="66">66</mat-option>
+                        <mat-option value="67">67</mat-option>
+                        <mat-option value="68">68</mat-option>
+                        <mat-option value="69">69</mat-option>
+                        <mat-option value="70">70</mat-option>
+                      </mat-select>
+                      </mat-form-field>
                       <span style="color:white">&nbsp;to&nbsp;</span>
-                      <select formControlName="searchToAge" name="ENDAGE" id="ENDAGE" style="width:60px;"
+                      <mat-form-field>
+                      <mat-select formControlName="searchToAge" name="ENDAGE" id="ENDAGE" 
                         class="optiondiv" size="1">
                         <!-- onblur="validateAge(this.form,'ageerr');" -->
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40" selected="selected">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                      </select>
+                        <mat-option value="18">18</mat-option>
+                        <mat-option value="19">19</mat-option>
+                        <mat-option value="20">20</mat-option>
+                        <mat-option value="21">21</mat-option>
+                        <mat-option value="22">22</mat-option>
+                        <mat-option value="23">23</mat-option>
+                        <mat-option value="24">24</mat-option>
+                        <mat-option value="25">25</mat-option>
+                        <mat-option value="26">26</mat-option>
+                        <mat-option value="27">27</mat-option>
+                        <mat-option value="28">28</mat-option>
+                        <mat-option value="29">29</mat-option>
+                        <mat-option value="30">30</mat-option>
+                        <mat-option value="31">31</mat-option>
+                        <mat-option value="32">32</mat-option>
+                        <mat-option value="33">33</mat-option>
+                        <mat-option value="34">34</mat-option>
+                        <mat-option value="35">35</mat-option>
+                        <mat-option value="36">36</mat-option>
+                        <mat-option value="37">37</mat-option>
+                        <mat-option value="38">38</mat-option>
+                        <mat-option value="39">39</mat-option>
+                        <mat-option value="40" selected="selected">40</mat-option>
+                        <mat-option value="41">41</mat-option>
+                        <mat-option value="42">42</mat-option>
+                        <mat-option value="43">43</mat-option>
+                        <mat-option value="44">44</mat-option>
+                        <mat-option value="45">45</mat-option>
+                        <mat-option value="46">46</mat-option>
+                        <mat-option value="47">47</mat-option>
+                        <mat-option value="48">48</mat-option>
+                        <mat-option value="49">49</mat-option>
+                        <mat-option value="50">50</mat-option>
+                        <mat-option value="51">51</mat-option>
+                        <mat-option value="52">52</mat-option>
+                        <mat-option value="53">53</mat-option>
+                        <mat-option value="54">54</mat-option>
+                        <mat-option value="55">55</mat-option>
+                        <mat-option value="56">56</mat-option>
+                        <mat-option value="57">57</mat-option>
+                        <mat-option value="58">58</mat-option>
+                        <mat-option value="59">59</mat-option>
+                        <mat-option value="60">60</mat-option>
+                        <mat-option value="61">61</mat-option>
+                        <mat-option value="62">62</mat-option>
+                        <mat-option value="63">63</mat-option>
+                        <mat-option value="64">64</mat-option>
+                        <mat-option value="65">65</mat-option>
+                        <mat-option value="66">66</mat-option>
+                        <mat-option value="67">67</mat-option>
+                        <mat-option value="68">68</mat-option>
+                        <mat-option value="69">69</mat-option>
+                        <mat-option value="70">70</mat-option>
+                      </mat-select>
+                      </mat-form-field>
                       <span style="color:white">&nbsp;Years</span>
                       <span id="ageerr" class="errortext" style="display: none;">&nbsp;</span></div>
                   <!-- </div> -->
@@ -226,87 +236,91 @@
                     <label>Height</label><br/>
                     <!-- <div class="theme-select"> -->
                     <dd>
-                      <select formControlName="searchFromHeight" style="width:100px;"
+                      <mat-form-field>
+                      <mat-select formControlName="searchFromHeight" 
                        id="STHEIGHT" style="width:100px;" class="optiondiv" size="1" name="STHEIGHT">
                        <!-- onblur="validateHeight(this.form,'heighterr');gatrack=gatrack+'~'+$(this).attr('id');" -->
-                        <option value="121">4ft - 121 cm</option>
-                        <option value="124">4ft 1in - 124cm</option>
-                        <option value="127">4ft 2in - 127cm</option>
-                        <option value="129">4ft 3in - 129cm</option>
-                        <option value="132">4ft 4in - 132cm</option>
-                        <option value="134">4ft 5in - 134cm</option>
-                        <option value="137">4ft 6in - 137cm</option>
-                        <option value="139">4ft 7in - 139cm</option>
-                        <option value="142">4ft 8in - 142cm</option>
-                        <option value="144">4ft 9in - 144cm</option>
-                        <option value="147">4ft 10in - 147cm</option>
-                        <option value="149">4ft 11in - 149cm</option>
-                        <option value="152">5ft - 152cm</option>
-                        <option value="154">5ft 1in - 154cm</option>
-                        <option value="157">5ft 2in - 157cm</option>
-                        <option value="160">5ft 3in - 160cm</option>
-                        <option value="162">5ft 4in - 162cm</option>
-                        <option value="165">5ft 5in - 165cm</option>
-                        <option value="167">5ft 6in - 167cm</option>
-                        <option value="170">5ft 7in - 170cm</option>
-                        <option value="172">5ft 8in - 172cm</option>
-                        <option value="175">5ft 9in - 175cm</option>
-                        <option value="177">5ft 10in - 177cm</option>
-                        <option value="180">5ft 11in - 180cm</option>
-                        <option value="182">6ft - 182cm</option>
-                        <option value="185">6ft 1in - 185cm</option>
-                        <option value="187">6ft 2in - 187cm</option>
-                        <option value="190">6ft 3in - 190cm</option>
-                        <option value="193">6ft 4in - 193cm</option>
-                        <option value="195">6ft 5in - 195cm</option>
-                        <option value="198">6ft 6in - 198cm</option>
-                        <option value="200">6ft 7in - 200cm</option>
-                        <option value="203">6ft 8in - 203cm</option>
-                        <option value="205">6ft 9in - 205cm</option>
-                        <option value="208">6ft 10in - 208cm</option>
-                        <option value="210">6ft 11in - 210cm</option>
-                        <option value="213">7ft - 213cm</option>
-                      </select><span style="color:white">&nbsp;to&nbsp;</span>
-                      <select formControlName="searchToHeight" style="width:100px;" style="width:100px;" class="optiondiv" size="1" id="ENDHEIGHT" name="ENDHEIGHT">
+                        <mat-option value="121">4ft - 121 cm</mat-option>
+                        <mat-option value="124">4ft 1in - 124cm</mat-option>
+                        <mat-option value="127">4ft 2in - 127cm</mat-option>
+                        <mat-option value="129">4ft 3in - 129cm</mat-option>
+                        <mat-option value="132">4ft 4in - 132cm</mat-option>
+                        <mat-option value="134">4ft 5in - 134cm</mat-option>
+                        <mat-option value="137">4ft 6in - 137cm</mat-option>
+                        <mat-option value="139">4ft 7in - 139cm</mat-option>
+                        <mat-option value="142">4ft 8in - 142cm</mat-option>
+                        <mat-option value="144">4ft 9in - 144cm</mat-option>
+                        <mat-option value="147">4ft 10in - 147cm</mat-option>
+                        <mat-option value="149">4ft 11in - 149cm</mat-option>
+                        <mat-option value="152">5ft - 152cm</mat-option>
+                        <mat-option value="154">5ft 1in - 154cm</mat-option>
+                        <mat-option value="157">5ft 2in - 157cm</mat-option>
+                        <mat-option value="160">5ft 3in - 160cm</mat-option>
+                        <mat-option value="162">5ft 4in - 162cm</mat-option>
+                        <mat-option value="165">5ft 5in - 165cm</mat-option>
+                        <mat-option value="167">5ft 6in - 167cm</mat-option>
+                        <mat-option value="170">5ft 7in - 170cm</mat-option>
+                        <mat-option value="172">5ft 8in - 172cm</mat-option>
+                        <mat-option value="175">5ft 9in - 175cm</mat-option>
+                        <mat-option value="177">5ft 10in - 177cm</mat-option>
+                        <mat-option value="180">5ft 11in - 180cm</mat-option>
+                        <mat-option value="182">6ft - 182cm</mat-option>
+                        <mat-option value="185">6ft 1in - 185cm</mat-option>
+                        <mat-option value="187">6ft 2in - 187cm</mat-option>
+                        <mat-option value="190">6ft 3in - 190cm</mat-option>
+                        <mat-option value="193">6ft 4in - 193cm</mat-option>
+                        <mat-option value="195">6ft 5in - 195cm</mat-option>
+                        <mat-option value="198">6ft 6in - 198cm</mat-option>
+                        <mat-option value="200">6ft 7in - 200cm</mat-option>
+                        <mat-option value="203">6ft 8in - 203cm</mat-option>
+                        <mat-option value="205">6ft 9in - 205cm</mat-option>
+                        <mat-option value="208">6ft 10in - 208cm</mat-option>
+                        <mat-option value="210">6ft 11in - 210cm</mat-option>
+                        <mat-option value="213">7ft - 213cm</mat-option>
+                      </mat-select><span style="color:white">&nbsp;to&nbsp;</span>
+                    </mat-form-field>
+                    <mat-form-field>
+                      <mat-select formControlName="searchToHeight" class="optiondiv" size="1" id="ENDHEIGHT" name="ENDHEIGHT">
                         <!-- onblur="validateHeight(this.form,'heighterr');gatrack=gatrack+'~'+$(this).attr('id');" -->
-                        <option value="121">4ft - 121 cm</option>
-                        <option value="124">4ft 1in - 124cm</option>
-                        <option value="127">4ft 2in - 127cm</option>
-                        <option value="129">4ft 3in - 129cm</option>
-                        <option value="132">4ft 4in - 132cm</option>
-                        <option value="134">4ft 5in - 134cm</option>
-                        <option value="137">4ft 6in - 137cm</option>
-                        <option value="139">4ft 7in - 139cm</option>
-                        <option value="142">4ft 8in - 142cm</option>
-                        <option value="144">4ft 9in - 144cm</option>
-                        <option value="147">4ft 10in - 147cm</option>
-                        <option value="149">4ft 11in - 149cm</option>
-                        <option value="152">5ft - 152cm</option>
-                        <option value="154">5ft 1in - 154cm</option>
-                        <option value="157">5ft 2in - 157cm</option>
-                        <option value="160">5ft 3in - 160cm</option>
-                        <option value="162">5ft 4in - 162cm</option>
-                        <option value="165">5ft 5in - 165cm</option>
-                        <option value="167">5ft 6in - 167cm</option>
-                        <option value="170">5ft 7in - 170cm</option>
-                        <option value="172">5ft 8in - 172cm</option>
-                        <option value="175">5ft 9in - 175cm</option>
-                        <option value="177">5ft 10in - 177cm</option>
-                        <option value="180">5ft 11in - 180cm</option>
-                        <option value="182">6ft - 182cm</option>
-                        <option value="185">6ft 1in - 185cm</option>
-                        <option value="187">6ft 2in - 187cm</option>
-                        <option value="190">6ft 3in - 190cm</option>
-                        <option value="193">6ft 4in - 193cm</option>
-                        <option value="195">6ft 5in - 195cm</option>
-                        <option value="198">6ft 6in - 198cm</option>
-                        <option value="200">6ft 7in - 200cm</option>
-                        <option value="203">6ft 8in - 203cm</option>
-                        <option value="205">6ft 9in - 205cm</option>
-                        <option value="208">6ft 10in - 208cm</option>
-                        <option value="210">6ft 11in - 210cm</option>
-                        <option value="213" selected="">7ft - 213cm</option>
-                      </select>
+                        <mat-option value="121">4ft - 121 cm</mat-option>
+                        <mat-option value="124">4ft 1in - 124cm</mat-option>
+                        <mat-option value="127">4ft 2in - 127cm</mat-option>
+                        <mat-option value="129">4ft 3in - 129cm</mat-option>
+                        <mat-option value="132">4ft 4in - 132cm</mat-option>
+                        <mat-option value="134">4ft 5in - 134cm</mat-option>
+                        <mat-option value="137">4ft 6in - 137cm</mat-option>
+                        <mat-option value="139">4ft 7in - 139cm</mat-option>
+                        <mat-option value="142">4ft 8in - 142cm</mat-option>
+                        <mat-option value="144">4ft 9in - 144cm</mat-option>
+                        <mat-option value="147">4ft 10in - 147cm</mat-option>
+                        <mat-option value="149">4ft 11in - 149cm</mat-option>
+                        <mat-option value="152">5ft - 152cm</mat-option>
+                        <mat-option value="154">5ft 1in - 154cm</mat-option>
+                        <mat-option value="157">5ft 2in - 157cm</mat-option>
+                        <mat-option value="160">5ft 3in - 160cm</mat-option>
+                        <mat-option value="162">5ft 4in - 162cm</mat-option>
+                        <mat-option value="165">5ft 5in - 165cm</mat-option>
+                        <mat-option value="167">5ft 6in - 167cm</mat-option>
+                        <mat-option value="170">5ft 7in - 170cm</mat-option>
+                        <mat-option value="172">5ft 8in - 172cm</mat-option>
+                        <mat-option value="175">5ft 9in - 175cm</mat-option>
+                        <mat-option value="177">5ft 10in - 177cm</mat-option>
+                        <mat-option value="180">5ft 11in - 180cm</mat-option>
+                        <mat-option value="182">6ft - 182cm</mat-option>
+                        <mat-option value="185">6ft 1in - 185cm</mat-option>
+                        <mat-option value="187">6ft 2in - 187cm</mat-option>
+                        <mat-option value="190">6ft 3in - 190cm</mat-option>
+                        <mat-option value="193">6ft 4in - 193cm</mat-option>
+                        <mat-option value="195">6ft 5in - 195cm</mat-option>
+                        <mat-option value="198">6ft 6in - 198cm</mat-option>
+                        <mat-option value="200">6ft 7in - 200cm</mat-option>
+                        <mat-option value="203">6ft 8in - 203cm</mat-option>
+                        <mat-option value="205">6ft 9in - 205cm</mat-option>
+                        <mat-option value="208">6ft 10in - 208cm</mat-option>
+                        <mat-option value="210">6ft 11in - 210cm</mat-option>
+                        <mat-option value="213" selected="">7ft - 213cm</mat-option>
+                      </mat-select>
+                      </mat-form-field>
                       <br><span id="heighterr" class="errortext" style="display: none;"></span>
                     </dd>
                     <!-- </div> -->
