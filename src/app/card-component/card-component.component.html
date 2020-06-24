@@ -38,7 +38,7 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
                   <label>Gender: </label>
-                  <div class="theme-select">
+                  <div class="">
                     <mat-form-field>
                     <mat-select formControlName="searchGender" class="form-control __plannerSelect">
                       <mat-option value="">--Select Gender--</mat-option>
@@ -54,7 +54,7 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="form-group">
                   <label>Language: </label>
-                  <div class="theme-select">
+                  <div class="">
                     <mat-form-field>
                     <mat-select formControlName="searchLanguage" class="form-control __plannerSelect">
                       <mat-option value="">--Select Language--</mat-option>
@@ -71,9 +71,9 @@
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <!-- <div class="focol-lg-12 col-md-12 col-sm-12 col-xs-12rm-group"> -->
                   <label>Caste: </label>
-                  <div class="theme-select">
+                  <div class="">
                     <mat-form-field>
-                    <mat-select formControlName="searchCaste" class="form-control __plannerSelect">
+                    <mat-select formControlName="searchCaste">
                       <mat-option value="Telugu Devangar">Telugu Devanga Chettiar</mat-option>
                       <mat-option value="">Vanniya Chettiar</mat-option>
                       <mat-option value="">24 Manai Chettiar</mat-option>
@@ -108,8 +108,8 @@
                     </select>
                     </span> -->
                     <div>
-                      <mat-form-field>
-                      <mat-select formControlName="searchFromAge" name="STAGE" id="STAGE" class="optiondiv" size="1">
+                      <mat-form-field style="width:35px !important">
+                      <mat-select formControlName="searchFromAge" style="width:35px" name="STAGE" id="STAGE" class="optiondiv" size="1">
                         <!-- onblur="validateAge(this.form,'ageerr');" -->
                         <mat-option value="21">21</mat-option>
                         <mat-option value="22">22</mat-option>
@@ -163,9 +163,9 @@
                         <mat-option value="70">70</mat-option>
                       </mat-select>
                       </mat-form-field>
-                      <span style="color:white">&nbsp;to&nbsp;</span>
-                      <mat-form-field>
-                      <mat-select formControlName="searchToAge" name="ENDAGE" id="ENDAGE" 
+                      <span style="color:white">&nbsp;&nbsp;to&nbsp;&nbsp;</span>
+                      <mat-form-field style="width:35px !important">
+                      <mat-select formControlName="searchToAge" name="ENDAGE" id="ENDAGE" style="width:35px" 
                         class="optiondiv" size="1">
                         <!-- onblur="validateAge(this.form,'ageerr');" -->
                         <mat-option value="18">18</mat-option>
@@ -236,9 +236,9 @@
                     <label>Height</label><br/>
                     <!-- <div class="theme-select"> -->
                     <dd>
-                      <mat-form-field>
+                      <mat-form-field style="width:120px !important">
                       <mat-select formControlName="searchFromHeight" 
-                       id="STHEIGHT" style="width:100px;" class="optiondiv" size="1" name="STHEIGHT">
+                       id="STHEIGHT" style="width:120px;" class="optiondiv" size="1" name="STHEIGHT">
                        <!-- onblur="validateHeight(this.form,'heighterr');gatrack=gatrack+'~'+$(this).attr('id');" -->
                         <mat-option value="121">4ft - 121 cm</mat-option>
                         <mat-option value="124">4ft 1in - 124cm</mat-option>
@@ -277,10 +277,12 @@
                         <mat-option value="208">6ft 10in - 208cm</mat-option>
                         <mat-option value="210">6ft 11in - 210cm</mat-option>
                         <mat-option value="213">7ft - 213cm</mat-option>
-                      </mat-select><span style="color:white">&nbsp;to&nbsp;</span>
+                      </mat-select>
                     </mat-form-field>
-                    <mat-form-field>
-                      <mat-select formControlName="searchToHeight" class="optiondiv" size="1" id="ENDHEIGHT" name="ENDHEIGHT">
+                    <span style="color:white">&nbsp;&nbsp;to&nbsp;&nbsp;</span>
+                    <mat-form-field style="width:120px !important">
+                      <mat-select style="width:120px" formControlName="searchToHeight" class="optiondiv"
+                        size="1" id="ENDHEIGHT" name="ENDHEIGHT">
                         <!-- onblur="validateHeight(this.form,'heighterr');gatrack=gatrack+'~'+$(this).attr('id');" -->
                         <mat-option value="121">4ft - 121 cm</mat-option>
                         <mat-option value="124">4ft 1in - 124cm</mat-option>
